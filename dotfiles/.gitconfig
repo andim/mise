@@ -1,0 +1,11 @@
+[user]
+	email = andisspam@gmail.com
+	name = Andreas Mayer
+[core]
+	excludesfile = .gitignore
+[push]
+	default = simple
+[difftool]
+    prompt = false
+[diff]
+	external = ~/repos/mise/scripts/gitdiff.sh
