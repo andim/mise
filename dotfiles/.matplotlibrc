@@ -1,0 +1,24 @@
+### MATPLOTLIBRC
+# custom settings for matplotlib
+# for other options see default config file
+#
+# File should be copied to the following location: 
+# unix/linux:
+#    $HOME/.config/matplotlib/matplotlibrc or
+#    $XDG_CONFIG_HOME/matplotlib/matplotlibrc (if $XDG_CONFIG_HOME is set)
+# other platforms:
+# $HOME/.matplotlib/matplotlibrc
+
+backend : GTKAgg
+
+### AXES
+axes.formatter.limits : -4, 4 # use scientific notation if log10
+                               # of the axis range is smaller than the
+                               # first or larger than the second
+
+axes.unicode_minus  : True    # use unicode for the minus symbol
+                               # rather than hyphen.  See
+                               # http://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
+### IMAGES
+image.interpolation  : nearest  # see help(imshow) for options
+image.origin : lower             # lower | upper
