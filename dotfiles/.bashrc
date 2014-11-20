@@ -18,8 +18,17 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# set the title to host:dir
+# set the bash prompt to host:dir
 export PS1="\h:\w:\\$ \[\e[0m\]"
+
+# If this is an xterm set the title to host:dir
+case "$TERM" in
+    xterm*|rxvt*)
+        PS1="\[\e]0;\h: \w\a\]$PS1"
+        ;;
+    *)
+        ;;
+esac
 
 # enable color support of ls
 if [ -x /usr/bin/dircolors ]; then
