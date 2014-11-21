@@ -9,8 +9,6 @@
 # other platforms:
 # $HOME/.matplotlib/matplotlibrc
 
-backend : GTKAgg
-
 ### AXES
 axes.formatter.limits : -4, 4 # use scientific notation if log10
                                # of the axis range is smaller than the
@@ -21,4 +19,5 @@ axes.unicode_minus  : True    # use unicode for the minus symbol
                                # http://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
 ### IMAGES
 image.interpolation  : nearest  # see help(imshow) for options
+image.cmap : gray # gray | jet etc...
 image.origin : lower             # lower | upper
