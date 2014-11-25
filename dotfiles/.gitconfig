@@ -2,7 +2,7 @@
 	email = andisspam@gmail.com
 	name = Andreas Mayer
 [core]
-	excludesfile = .gitignore
+	excludesfile = ~/.gitignore
 [push]
 	default = simple
 [difftool]
