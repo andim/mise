@@ -1,9 +1,9 @@
 " no compatibility to vi
 set nocompatible
 
-" pathogen
-filetype off
-call pathogen#infect()
+" pathogen for handling modules
+" filetype off
+" call pathogen#infect()
 
 syntax on                           " syntax highlighing
 filetype on                          " try to detect filetypes
