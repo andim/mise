@@ -45,7 +45,9 @@ set wildmode=longest,list:full
 " always show at least 3 lines at the top
 set scrolloff=3
 " use numbering relative to current line
-set relativenumber
+if exists('+relativenumber')
+    set relativenumber
+endif
 
 " searching
 set ignorecase
