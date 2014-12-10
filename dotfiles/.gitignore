@@ -1,2 +1,11 @@
+## Python
 *.pyc
+
+# C extensions
+*.so
+
+# distribution / packaging
+build/
+
 *.swp
+
