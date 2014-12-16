@@ -72,5 +72,8 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# set vim as standard editor
+export EDITOR=vim
+
 # append custom modules to python search path
 # export PYTHONPATH=${PYTHONPATH}:
