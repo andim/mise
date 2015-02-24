@@ -1,0 +1,16 @@
+GIMP Palette
+Name: goepres
+Columns: 3
+#
+ 14  30 151	darkprimary
+ 50  70 224	mediumprimary
+226 229 254	lightprimary
+155 124  15	darkcomplementary
+246 197  28	mediumcomplementary
+254 248 226	lightcomplementary
+ 17 153  15	darkalternative
+ 45 234  42	mediumalternative
+228 252 227	lightalternative
+ 48  48  48	darkgrey
+136 136 136	mediumgrey
+229 229 229	lightgrey
