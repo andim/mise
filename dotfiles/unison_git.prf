@@ -1,0 +1,9 @@
+root = /home/andreas/repos/gitrepo/
+root = /home/andreas/dir/
+
+ignore = Name .gitignore
+ignore = Path .git
+
+times = false
+
+include default
