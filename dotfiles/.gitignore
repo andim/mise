@@ -4,8 +4,19 @@
 # C extensions
 *.so
 
+# LaTeX temporary files
+*.out
+*.aux
+*.log
+*.bbl
+*.blg
+*.toc
+
 # distribution / packaging
 build/
+
+# IPython
+.ipynb_checkpoints/
 
 *.swp
 

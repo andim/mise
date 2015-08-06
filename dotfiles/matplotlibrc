@@ -9,6 +9,8 @@
 # other platforms:
 # $HOME/.matplotlib/matplotlibrc
 
+backend : GtkAgg
+
 ### AXES
 axes.formatter.limits : -4, 4 # use scientific notation if log10
                                # of the axis range is smaller than the

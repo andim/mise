@@ -1,0 +1,9 @@
+# Unison preferences file
+
+ignore = Name *.aux
+ignore = Name *.log
+ignore = Name *.bbl
+ignore = Name *.blg
+ignore = Name *.out
+ignore = Name *.swp
+ignore = Name .*.swp

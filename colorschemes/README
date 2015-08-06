@@ -1,0 +1,4 @@
+Gimp palettes (*.gpl) can be used if they are put into
+
+- Gimp: /.gimp/palettes
+- Inkscape: ~/.config/inkscape/palettes
