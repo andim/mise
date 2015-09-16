@@ -11,6 +11,7 @@
 *.bbl
 *.blg
 *.toc
+*.end
 
 # distribution / packaging
 build/
