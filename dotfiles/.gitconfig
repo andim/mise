@@ -9,3 +9,5 @@
     prompt = false
 [diff]
 	external = ~/repos/mise/scripts/gitdiff.sh
+[push]
+	default = matching
