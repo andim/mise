@@ -23,6 +23,13 @@
 #$ -r n 
 # run as an array job (change number of tasks here)
 #$ -t 1-50
+# specify queue to which to submit
+#$ -q queuename
+# limit number of concurrent jobs
+#$ -tc 50
+# job priority in [-1023, 1024] (default = 0)
+#$ -p -1
+
 
 # uncomment line below to sleep different amount of time before
 # executing the different tasks, which can be useful e.g. to avoid
