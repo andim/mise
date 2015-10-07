@@ -3,6 +3,7 @@
 	name = Andreas Mayer
 [core]
 	excludesfile = ~/.gitignore
+	attributesfile = /home/andreas/.gitattributes
 [push]
 	default = simple
 [difftool]
@@ -11,3 +12,6 @@
 	external = ~/repos/mise/scripts/gitdiff.sh
 [push]
 	default = matching
+[filter "dropoutput_ipynb"]
+	clean = ~/repos/clones/ipynb_output_filter/ipynb_output_filter.py
+	smudge = cat
