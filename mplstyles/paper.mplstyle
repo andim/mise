@@ -9,7 +9,8 @@ text.usetex: True
 text.latex.preamble: \usepackage{color}
 
 image.cmap: Greys
-font.family: sans-serif
+font.family: serif
+font.serif: cm
 font.sans-serif: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
 font.size: 9
 
@@ -38,8 +39,8 @@ xtick.major.width: 0.8
 ytick.major.width: 0.8
 xtick.minor.width: 0.4
 ytick.minor.width: 0.4
-xtick.labelsize: medium
-ytick.labelsize: medium
+xtick.labelsize: small
+ytick.labelsize: small
 
 # legend
 legend.fontsize: medium
@@ -59,6 +60,5 @@ lines.markeredgewidth: 0
 lines.solid_capstyle: round
 
 # patches
-patch.linewidth: 0.24
-
+patch.linewidth: 0.0
 
