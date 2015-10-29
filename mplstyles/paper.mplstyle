@@ -29,8 +29,8 @@ xtick.direction: out
 ytick.direction: out
 xtick.color: .15
 ytick.color: .15
-xtick.major.pad: 3.6
-ytick.major.pad: 3.6
+xtick.major.pad: 3.0
+ytick.major.pad: 3.0
 xtick.major.size: 0
 ytick.major.size: 0
 xtick.minor.size: 0
@@ -60,5 +60,4 @@ lines.markeredgewidth: 0
 lines.solid_capstyle: round
 
 # patches
-patch.linewidth: 0.0
-
+patch.linewidth: 0.8
