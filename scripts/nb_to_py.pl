@@ -31,6 +31,15 @@ while (<>) {
     # replace E^x with np.exp(x)
     s/E\^([0-9a-z_]+)/np.exp($1)/g;
 
+    # replace Exp with np.exp
+    s/Exp/np.exp/g;
+    # replace Abs with np.abs
+    s/Abs/np.abs/g;
+
+    # make round brackets from curly brackets
+    s/\[/(/g;
+    s/\]/)/g;
+
     # replace whitespace with * (for multiplication)
     s/([a-z0-9)])\s+(?=[a-z0-9(])/$1 * /ig;
 
