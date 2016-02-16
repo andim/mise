@@ -29,12 +29,14 @@ while (<>) {
     # replace E^( with np.exp(
     s/E\^\(/np.exp(/g;
     # replace E^x with np.exp(x)
-    s/E\^([0-9a-z_]+)/np.exp($1)/g;
+    s/E\^(\-?[0-9a-z_]+)/np.exp($1)/g;
 
     # replace Exp with np.exp
     s/Exp/np.exp/g;
     # replace Abs with np.abs
     s/Abs/np.abs/g;
+    # replace Log with np.log
+    s/Log/np.log/g;
 
     # make round brackets from curly brackets
     s/\[/(/g;
