@@ -6,12 +6,12 @@ figure.figsize: 6.4, 4.4
 
 text.color: .15
 text.usetex: True
-text.latex.preamble: \usepackage{color}, \usepackage{amsmath}, \usepackage{bm}
+text.latex.preamble: \usepackage{color}, \usepackage{amsmath}, \renewcommand{\familydefault}{\sfdefault}, \usepackage[helvet]{sfmath}, \usepackage{bm}
 
 image.cmap: Greys
-font.family: serif
+font.family: sans-serif
 font.serif: cm
-font.sans-serif: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+font.sans-serif: Helvetica, Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
 font.size: 9
 
 # axes
