@@ -2,3 +2,6 @@ Gimp palettes (*.gpl) can be used if they are put into
 
 - Gimp: /.gimp/palettes
 - Inkscape: ~/.config/inkscape/palettes
+
+Otherwise you can also convert them to latex definecolor commands with the
+conversion script convert_to_latex.py
