@@ -15,6 +15,7 @@
 
 # distribution / packaging
 build/
+dist/
 
 # IPython
 .ipynb_checkpoints/
