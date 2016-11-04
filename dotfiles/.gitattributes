@@ -1,1 +1,5 @@
+# filter output of jupyter notebooks
+# needs setup of https://github.com/toobaz/ipynb_output_filter
 *.ipynb    filter=dropoutput_ipynb
+
+*.bib      filter=sortbib
