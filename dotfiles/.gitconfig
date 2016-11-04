@@ -15,3 +15,6 @@
 [filter "dropoutput_ipynb"]
 	clean = ~/repos/clones/ipynb_output_filter/ipynb_output_filter.py
 	smudge = cat
+[filter "sortbib"]
+	clean = bibsort
+	smudge = cat
