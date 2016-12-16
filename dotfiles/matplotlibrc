@@ -9,7 +9,7 @@
 # other platforms:
 # $HOME/.matplotlib/matplotlibrc
 
-backend : GtkAgg
+backend : WxAgg
 
 ### FIGURES
 figure.autolayout : True
