@@ -1,0 +1,6 @@
+[extensions]
+hgk =
+hgext.extdiff =
+
+[extdiff]
+cmd.vdiff = meld
