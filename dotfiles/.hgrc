@@ -1,3 +1,6 @@
+[ui]
+username = Andreas Mayer <andisspam@gmail.com>
+
 [extensions]
 hgk =
 hgext.extdiff =
