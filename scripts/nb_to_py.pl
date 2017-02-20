@@ -21,7 +21,7 @@ while (<>) {
     s/([0-9]+)\/([0-9]+)/($1.0\/$2)/g;
 
     # Replace greek symbols 
-    s/\\\[(\w{2,6})\]/\L$1/g;
+    s/\\\[(\w{2,7})\]/\L$1/g;
 
     # escape greek lambda (python keyword)
     s/lambda/lambda_/g;
