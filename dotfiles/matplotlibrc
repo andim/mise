@@ -12,7 +12,9 @@
 backend : WxAgg
 
 ### FIGURES
-figure.autolayout : True
+# careful: The following is currently broken
+# see matplotlib issue #7805
+#figure.autolayout : True
 
 ### AXES
 axes.formatter.limits : -4, 4 # use scientific notation if log10
