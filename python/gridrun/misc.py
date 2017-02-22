@@ -1,6 +1,8 @@
 import os.path
 import itertools
 import numbers
+import numpy as np
+import pandas as pd
 
 def loadnpz(filename):
     """Load a npz file as a pandas DataFrame"""

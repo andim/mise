@@ -7,20 +7,21 @@ import sys
 import numpy as np
 from misc import *
 
-## dummy function replace by whatever interesting you want to do
-
-def dostuff(param1, param2):
-    return [1.0, 2.0]
-
 ## parameter definitions
 param1s = 1.0
 param2s = [2.0, 5.0, 10.0]
 
+## simulation logic
+def run(param1, param2):
+    return [1.0, 2.0]
+
+## batch run parameters
 nbatch = 1
 disp = False
 datadir = 'data/'
 outname = 'scan'
 
+## batch run logic
 paramscomb = params_combination((param1s, param2s))
 columns = ['param1', 'param2', 'res1', 'res2']
 if parametercheck(datadir, sys.argv, paramscomb, nbatch):
@@ -29,8 +30,8 @@ if parametercheck(datadir, sys.argv, paramscomb, nbatch):
     for i in progressbar(range(nbatch)):
         n = (njob-1) * nbatch + i
         if disp:
-            print paramscomb[n]
-        res = dostuff(*paramscomb[n])
+            print zip(columns[:len(paramscomb[n])], paramscomb[n])
+        res = run(*paramscomb[n])
         row = list(paramscomb[n])
         row.extend(res)
         data.append(row)

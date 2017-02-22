@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 # aggregate results by concatenating npz files
 # directory specified as command line argument
 # output filename optionally specified by second command line argument
