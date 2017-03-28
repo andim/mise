@@ -33,6 +33,8 @@ case "$TERM" in
         ;;
 esac
 
+export PATH=$PATH:$HOME/.local/bin/:/usr/local/bin/
+
 # enable color support of ls
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -66,6 +68,10 @@ extract () {
    fi
 }
 
+ipynbtopy () {
+	jupyter nbconvert --to python $1 --stdout --template=~/repos/mise/python/cleanpython.tpl | grep -Ev 'get_ipython' > "`basename $1 .ipynb`.py"
+}
+
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -75,8 +81,8 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# set vim as standard editor
-export EDITOR=vim
-
 # append custom modules to python search path
-# export PYTHONPATH=${PYTHONPATH}:
+export PYTHONPATH=${PYTHONPATH}:/home/andreas/repos/clones/pyprind/:/home/andreas/repos/andima-personal/python/
+
+# added by Miniconda2 4.2.12 installer
+export PATH="/home/andreas/miniconda2/bin:$PATH"
