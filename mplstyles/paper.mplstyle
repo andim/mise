@@ -3,18 +3,21 @@
 
 figure.facecolor: white
 figure.figsize: 6.4, 4.4
+figure.titlesize: medium
 
 text.color: .15
 text.usetex: True
 text.latex.preamble: \usepackage{color}, \usepackage{amsmath}, \usepackage{bm}
 
 image.cmap: Greys
+font.size: 9.0
 font.family: serif
 font.serif: cm
 font.sans-serif: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
-font.size: 9
 
 # axes
+# Tableau10 colors
+axes.prop_cycle: cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
 axes.grid: False
 axes.facecolor: white
 axes.labelcolor: .15
@@ -23,7 +26,7 @@ axes.edgecolor: .15
 axes.linewidth: 1.0
 axes.axisbelow: True
 axes.labelsize: medium
-axes.titlesize: large
+axes.titlesize: medium
 
 # ticks
 xtick.direction: out
@@ -48,6 +51,9 @@ legend.fontsize: medium
 legend.frameon: False
 legend.numpoints: 1
 legend.scatterpoints: 1
+legend.columnspacing: 1.0
+legend.handletextpad: 0.5
+legend.handlelength: 1.5
 
 # grid
 grid.linewidth: 0.8
