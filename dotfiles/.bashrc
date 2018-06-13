@@ -21,13 +21,13 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# set the bash prompt to host:dir
-export PS1="\h:\w:\\$ \[\e[0m\]"
+# set the bash prompt to dir
+export PS1="\w:\\$ \[\e[0m\]"
 
-# If this is an xterm set the title to host:dir
+# If this is an xterm set the title to dir (used in tab title)
 case "$TERM" in
     xterm*|rxvt*)
-        PS1="\[\e]0;\h: \w\a\]$PS1"
+        PS1="\[\e]0;\w\a\]$PS1"
         ;;
     *)
         ;;
@@ -84,5 +84,5 @@ fi
 # append custom modules to python search path
 export PYTHONPATH=${PYTHONPATH}:/home/andreas/repos/clones/pyprind/:/home/andreas/repos/andima-personal/python/
 
-# added by Miniconda2 4.2.12 installer
-export PATH="/home/andreas/miniconda2/bin:$PATH"
+# added by Anaconda3 installer
+export PATH="/home/amayer/anaconda3/bin:$PATH"
