@@ -3,7 +3,7 @@
 	name = Andreas Mayer
 [core]
 	excludesfile = ~/.gitignore
-	attributesfile = /home/andreas/.gitattributes
+	attributesfile = ~/.gitattributes
 [push]
 	default = simple
 [difftool]

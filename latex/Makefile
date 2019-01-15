@@ -9,8 +9,8 @@ TEMPFILES = *.log *.lot *.lof *.toc *.out *.aux *.bbl *.blg *.pdf *.glo *.ist *.
 MAKEDIR := $(shell pwd)
 SECTIONSDIR = $(MAKEDIR)
 sections = $(SECTIONSDIR)/*.tex
-additionaldeps = 
-SHAREDREFDIR = 
+additionaldeps = *.tex library.bib
+SHAREDREFDIR = ~/lptcloud/paper
 
 RM = /bin/rm -f
 OUT = /dev/null 2>&1
@@ -24,7 +24,7 @@ RERUNBIB = "No file.*\.bbl|Citation.*undefined"
 s%: %.pdf
 	@evince $< > $(OUT) &
 
-%.pdf: %.tex $(sections) $(additionaldeps) $(makeimages)
+%.pdf: %.tex $(sections) $(additionaldeps)
 	@echo "changes found. regenerating"
 	@pdflatex -file-line-error $<
 	@# run bibtex if needed
@@ -35,7 +35,7 @@ s%: %.pdf
 	@egrep -c $(RERUN) $(basename $<).log > $(OUT) && (echo "Problem with references";pdflatex $< -file-line-error); true
 
 library.bib: $(SHAREDREFDIR)/library.bib
-	grep -Ev 'abstract =|issn =|isbn =|pmid =|keywords =|file =|doi =|url =|archivePrefix =|eprint =|arxivId =' $(SHAREDREFDIR)/library.bib >library.bib
+	grep -Ev 'abstract =|issn =|isbn =|pmid =|keywords =|file =|doi =|url =|archivePrefix =|eprint =|arxivId =|annote =|primaryClass =' $(SHAREDREFDIR)/library.bib >library.bib
 
 clean:
 	$(RM) $(TEMPFILES)
