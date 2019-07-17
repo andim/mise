@@ -8,7 +8,7 @@
 # loop through every line on stdin
 while (<>) {
     s/[^!-~\s]//g;      # strip non-ascii characters
-    s/{{x\[t\]->//g;    # remove beginning {{x[t]->
+    #    s/{{x\[t\]->//g;    # remove beginning {{x[t]->
     s/}}//g;            # remove ending }}
     s/\+\n/\+/g;        # add line breaks at ever + or -
     s/\-\n/\-/g;
@@ -25,6 +25,8 @@ while (<>) {
 
     # escape greek lambda (python keyword)
     s/lambda/lambda_/g;
+    # replace pi with np.pi
+    s/pi/np.pi/g;
 
     # replace E^( with np.exp(
     s/E\^\(/np.exp(/g;
@@ -37,6 +39,12 @@ while (<>) {
     s/Abs/np.abs/g;
     # replace Log with np.log
     s/Log/np.log/g;
+    # replace Erf with scipy.special.erf
+    s/Erf/scipy.special.erf/g;
+    # replace Erfc with scipy.special.erfc
+    s/Erfc/scipy.special.erfc/g;
+    # replace Sqrt with np.sqrt
+    s/Sqrt/np.sqrt/g;
 
     # make round brackets from curly brackets
     s/\[/(/g;
