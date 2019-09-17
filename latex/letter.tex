@@ -1,0 +1,59 @@
+\documentclass[10pt]{letter}
+\usepackage{geometry}
+\geometry{
+	paper=letterpaper,
+	top=3cm,
+	bottom=1.5cm,
+	left=4.5cm,
+	right=4.5cm,
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+% Un-commenting this line will push the closing to the left
+%\longindentation=0pt
+
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+% Create a new command for the horizontal rule in the document which allows thickness specification
+\makeatletter
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+
+\usepackage{microtype}
+
+
+\address{
+    \includegraphics[width=1.8in]{logo.png}
+    \hspace{3.1in} % Position of the institution logo, increase to move left, decrease to move right
+    \makebox[0ex][r]{\bf Dr. Andreas Mayer }\hspace{0.2in}
+    ~\\[-0.11in] % Reduce the whitespace above the horizontal rule
+    \hspace{0.0in}\vhrulefill{1pt} \\
+    \hspace{\fill}\parbox[t]{1.8in}{
+    \footnotesize Lewis-Sigler Theory Fellow\\
+    \footnotesize 232 Carl Icahn Lab\\
+    \footnotesize Princeton, NJ 08544\\
+    \footnotesize Email: am66@princeton.edu\\
+    \footnotesize URL: andim.github.io
+    }
+}
+
+\signature{Andreas Mayer}
+
+
+\begin{document}
+
+\begin{letter}{} % Name/title of the addressee
+
+\opening{Dear Sir or Madam,}
+
+\vspace{1\parskip} % Extra whitespace for aesthetics
+\closing{Sincerely,}
+
+%\ps{P.S. You can find additional information attached to this letter.} 
+
+
+\end{letter}
+\end{document}

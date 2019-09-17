@@ -9,7 +9,7 @@ TEMPFILES = *.log *.lot *.lof *.toc *.out *.aux *.bbl *.blg *.pdf *.glo *.ist *.
 MAKEDIR := $(shell pwd)
 SECTIONSDIR = $(MAKEDIR)
 sections = $(SECTIONSDIR)/*.tex
-additionaldeps = *.tex library.bib
+additionaldeps = *.tex library.bib images/*pdf
 SHAREDREFDIR = ~/lptcloud/paper
 
 RM = /bin/rm -f
