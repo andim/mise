@@ -4,8 +4,14 @@
 figure.facecolor: white
 figure.figsize: 6.4, 4.4
 
-text.color: .15
-text.usetex: True
+savefig.dpi : 300
+savefig.bbox : tight
+savefig.pad_inches : 0.1
+savefig.facecolor : none
+
+
+text.color: .0
+text.usetex: False
 text.latex.preamble: \usepackage{color}, \usepackage{amsmath}, \renewcommand{\familydefault}{\sfdefault}, \usepackage[helvet]{sfmath}, \usepackage{bm}
 
 image.cmap: Greys

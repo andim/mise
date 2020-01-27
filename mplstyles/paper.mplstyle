@@ -5,7 +5,13 @@ figure.facecolor: white
 figure.figsize: 6.4, 4.4
 figure.titlesize: medium
 
-text.color: .15
+savefig.dpi : 300
+savefig.bbox : tight
+savefig.pad_inches : 0.1
+savefig.facecolor : none
+
+
+text.color: .0
 text.usetex: True
 text.latex.preamble: \usepackage{color}, \usepackage{amsmath}, \usepackage{bm}
 
