@@ -1,9 +1,9 @@
+#!/usr/bin/env perl
+
 # convert Mathematica formula to python expression
 # modified from a cc-by licensed script by Bennett Kanuka
 # (https://gist.github.com/bkanuka/10744247)
 # usage: cat input | perl nb_to_py.pl
-
-#!/usr/bin/env perl
 
 # loop through every line on stdin
 while (<>) {

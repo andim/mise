@@ -1,8 +1,5 @@
-# .15 = dark_gray
-# .8 = light_gray
-
 figure.facecolor: white
-figure.figsize: 9.0, 6.3
+figure.figsize: 6.0, 4.0
 
 savefig.dpi : 300
 savefig.bbox : tight
@@ -21,27 +18,32 @@ font.sans-serif: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
 font.size: 18
 
 # axes
+# Tableau10 colors
+axes.prop_cycle: cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
 axes.grid: False
 axes.facecolor: white
-axes.labelcolor: .15
+axes.labelcolor: .0
 axes.labelpad: 4.0
 axes.edgecolor: .15
 axes.linewidth: 1.5
 axes.axisbelow: True
 axes.labelsize: medium
 axes.titlesize: large
+axes.spines.top    : False
+axes.spines.right  : False
+axes.unicode_minus  : True
 
 # ticks
-xtick.direction: out
-ytick.direction: out
-xtick.color: .15
-ytick.color: .15
+xtick.direction: inout
+ytick.direction: inout
+xtick.color: .0
+ytick.color: .0
 xtick.major.pad: 3.0
 ytick.major.pad: 4.0
-xtick.major.size: 0
-ytick.major.size: 0
-xtick.minor.size: 0
-ytick.minor.size: 0
+xtick.major.size: 4
+ytick.major.size: 4
+xtick.minor.size: 2
+ytick.minor.size: 2
 xtick.major.width: 1.0
 ytick.major.width: 1.0
 xtick.minor.width: 0.5
