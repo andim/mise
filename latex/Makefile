@@ -37,5 +37,8 @@ s%: %.pdf
 library.bib: $(SHAREDREFDIR)/library.bib
 	grep -Ev 'abstract =|issn =|isbn =|pmid =|keywords =|file =|doi =|url =|archivePrefix =|eprint =|arxivId =|annote =|primaryClass =' $(SHAREDREFDIR)/library.bib >library.bib
 
+# export clean bibtex file for submission
+#bibexport -o out.bib name.aux
+
 clean:
 	$(RM) $(TEMPFILES)
