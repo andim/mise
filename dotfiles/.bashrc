@@ -45,6 +45,23 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# sync remote folder of same name from feynman cluster
+# usage:
+# sync `pwd`
+# sync `pwd` csv
+sync () {
+   if [ -d $1 ] ; then
+       echo $1;
+       tmp=${1/home/biotheory};
+       echo $tmp;
+       remotepath=${tmp/amayer/andreas};
+       echo $remotepath;
+       rsync -P feynman:/mnt/$remotepath/*$2 $1;
+   else
+       echo "'$1' is not a valid path!"
+   fi
+}
+
 # as suggested by Mendel Cooper in "Advanced Bash Scripting Guide"
 extract () {
    if [ -f $1 ] ; then

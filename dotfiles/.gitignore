@@ -19,6 +19,7 @@ dist/
 
 # IPython
 .ipynb_checkpoints/
+.snakemake
 
 *.swp
 

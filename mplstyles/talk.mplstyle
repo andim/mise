@@ -40,10 +40,10 @@ xtick.color: .0
 ytick.color: .0
 xtick.major.pad: 3.0
 ytick.major.pad: 4.0
-xtick.major.size: 4
-ytick.major.size: 4
-xtick.minor.size: 2
-ytick.minor.size: 2
+xtick.major.size: 8
+ytick.major.size: 8
+xtick.minor.size: 4
+ytick.minor.size: 4
 xtick.major.width: 1.0
 ytick.major.width: 1.0
 xtick.minor.width: 0.5
@@ -52,7 +52,7 @@ xtick.labelsize: small
 ytick.labelsize: small
 
 # legend
-legend.fontsize: medium
+legend.fontsize: small
 legend.frameon: False
 legend.numpoints: 1
 legend.scatterpoints: 1
