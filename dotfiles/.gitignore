@@ -9,6 +9,8 @@
 *.aux
 *.log
 *.bbl
+*.bcf
+*.run.xml
 *.blg
 *.toc
 *.end

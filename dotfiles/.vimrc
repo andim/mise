@@ -15,7 +15,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
-" set local indentaion settings for some file types
+" set local indentation settings for some file types
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4
 autocmd FileType c setlocal expandtab shiftwidth=4 softtabstop=4
 autocmd FileType cpp setlocal expandtab shiftwidth=4 softtabstop=4
