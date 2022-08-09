@@ -1,13 +1,25 @@
 " no compatibility to vi
 set nocompatible
 
-" pathogen for handling modules
-" filetype off
-" call pathogen#infect()
+" vundle for handling modules
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'https://github.com/snakemake/snakemake.git', {'rtp': 'misc/vim/'}
+Plugin 'chrisbra/csv.vim'
+let g:csv_no_conceal = 1
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 syntax on                           " syntax highlighing
-filetype on                          " try to detect filetypes
-filetype plugin indent on    " enable loading indent file for filetype
 
 " tabbing
 set tabstop=4
