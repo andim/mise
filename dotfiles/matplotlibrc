@@ -11,20 +11,94 @@
 
 backend : WxAgg
 
-### FIGURES
-# careful: The following is currently broken
-# see matplotlib issue #7805
-#figure.autolayout : True
 
 ### AXES
 axes.formatter.limits : -4, 4 # use scientific notation if log10
                                # of the axis range is smaller than the
                                # first or larger than the second
 
-axes.unicode_minus  : True    # use unicode for the minus symbol
-                               # rather than hyphen.  See
-                               # http://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
 ### IMAGES
 image.interpolation  : nearest  # see help(imshow) for options
 image.cmap : viridis # gray | jet etc...
 image.origin : lower             # lower | upper
+
+
+figure.facecolor: white
+figure.figsize: 3.42, 2.4
+figure.titlesize: medium
+
+savefig.dpi : 300
+savefig.bbox : tight
+savefig.pad_inches : 0.1
+savefig.facecolor : none
+
+
+text.color: .0
+text.usetex: False
+
+font.size: 10.0
+font.family: sans-serif
+font.serif: cm
+font.sans-serif: DejaVu Sans, Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+
+# axes
+# Tableau10 colors
+axes.prop_cycle: cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
+axes.grid: False
+axes.facecolor: white
+axes.labelcolor: .0
+axes.labelpad: 1.5
+axes.edgecolor: .0
+axes.linewidth: 1.0
+axes.axisbelow: True
+axes.labelsize: medium
+axes.titlesize: medium
+axes.spines.top    : False
+axes.spines.right  : False
+axes.unicode_minus  : True
+
+# ticks
+xtick.direction: inout
+ytick.direction: inout
+xtick.color: .0
+ytick.color: .0
+xtick.major.pad: 2.5
+ytick.major.pad: 2.5
+xtick.major.size: 5
+ytick.major.size: 5
+xtick.minor.size: 3
+ytick.minor.size: 3
+xtick.major.width: 0.9
+ytick.major.width: 0.9
+xtick.minor.width: 0.5
+ytick.minor.width: 0.5
+xtick.labelsize: small
+ytick.labelsize: small
+
+# legend
+legend.fontsize: medium
+legend.title_fontsize: medium
+legend.frameon: False
+legend.numpoints: 1
+legend.scatterpoints: 1
+legend.markerscale: 0.75
+legend.columnspacing: 1.0
+legend.labelspacing  : 0.25
+legend.handletextpad: 0.5
+legend.handlelength: 1.25
+legend.borderaxespad: 0.25
+
+
+# grid
+grid.linewidth: 0.8
+grid.color: .8
+grid.linestyle: -
+
+# lines
+lines.linewidth: 1.3
+lines.markersize: 2.5
+lines.markeredgewidth: 0.8
+lines.solid_capstyle: round
+
+# patches
+patch.linewidth: 0.8
