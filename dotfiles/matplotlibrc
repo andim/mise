@@ -9,9 +9,6 @@
 # other platforms:
 # $HOME/.matplotlib/matplotlibrc
 
-backend : WxAgg
-
-
 ### AXES
 axes.formatter.limits : -4, 4 # use scientific notation if log10
                                # of the axis range is smaller than the
@@ -26,6 +23,7 @@ image.origin : lower             # lower | upper
 figure.facecolor: white
 figure.figsize: 3.42, 2.4
 figure.titlesize: medium
+figure.dpi : 300
 
 savefig.dpi : 300
 savefig.bbox : tight

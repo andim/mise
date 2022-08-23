@@ -1,0 +1,19 @@
+name: min
+channels:
+  - bioconda
+dependencies:
+  - jupyter
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - statsmodels
+  - scikit-learn
+  - sphinx
+  - pytest
+  - snakemake
+  - pip
+  - pip:
+    - pyrepseq
+    - python-levenshtein
