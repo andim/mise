@@ -1,2 +1,6 @@
 gimp
 inkscape
+texlive
+texlive-science
+texlive-publishers
+texlive-lang-german
