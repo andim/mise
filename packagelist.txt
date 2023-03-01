@@ -1,6 +1,10 @@
 gimp
 inkscape
+meld
 texlive
 texlive-science
 texlive-publishers
 texlive-lang-german
+texlive-xetex
+texlive-bibtex-extra
+biber
